@@ -70,11 +70,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="YourCoins" rowHeight="90" id="o2h-c2-CFJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="YourCoins" rowHeight="90" id="o2h-c2-CFJ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o2h-c2-CFJ" id="3dT-Ax-r8d">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -117,11 +117,100 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableViewWallet" destination="gKA-1G-wCA" id="lY3-u0-S9p"/>
+                        <segue destination="Byg-Df-dtx" kind="show" identifier="SegueBuySell" id="VLb-rd-Izz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNk-Ps-J9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1744.8" y="-210.04497751124438"/>
+        </scene>
+        <!--Operations View Controller-->
+        <scene sceneID="ZQ6-6a-B2x">
+            <objects>
+                <viewController id="Byg-Df-dtx" customClass="OperationsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dMf-Hs-9fZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-Be-rvk">
+                                <rect key="frame" x="262" y="83" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="3ei-pj-jgP"/>
+                                    <constraint firstAttribute="height" constant="30" id="tY9-Hf-77E"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantidade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHq-Ph-qV7">
+                                <rect key="frame" x="16" y="88" width="94" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RD9-w3-mtL"/>
+                                    <constraint firstAttribute="width" constant="94" id="nF3-dD-FaT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-vY-rCW">
+                                <rect key="frame" x="299" y="121" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XUE-ls-erZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="fDx-UW-EEb"/>
+                                </constraints>
+                                <state key="normal" title="Comprar"/>
+                                <connections>
+                                    <action selector="buySell:" destination="Byg-Df-dtx" eventType="touchUpInside" id="AcB-59-VkX"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zh-v7-m2Q">
+                                <rect key="frame" x="0.0" y="402" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Byg-Df-dtx" id="Koo-V3-ewZ"/>
+                                    <outlet property="delegate" destination="Byg-Df-dtx" id="XGG-eK-sp5"/>
+                                </connections>
+                            </pickerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAu-1N-aop">
+                                <rect key="frame" x="0.0" y="358" width="375" height="44"/>
+                                <items/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione a moeda para vender " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc6-rd-MVX">
+                                <rect key="frame" x="65" y="370" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AAu-1N-aop" firstAttribute="leading" secondItem="8zh-v7-m2Q" secondAttribute="leading" id="3qF-Fv-Cg8"/>
+                            <constraint firstItem="Rc6-rd-MVX" firstAttribute="centerX" secondItem="AAu-1N-aop" secondAttribute="centerX" id="Esb-FF-qcO"/>
+                            <constraint firstItem="8zh-v7-m2Q" firstAttribute="trailing" secondItem="Z22-dx-eK2" secondAttribute="trailing" id="HE8-u7-aMs"/>
+                            <constraint firstItem="AAu-1N-aop" firstAttribute="centerX" secondItem="8zh-v7-m2Q" secondAttribute="centerX" id="LxU-X7-I1M"/>
+                            <constraint firstItem="8zh-v7-m2Q" firstAttribute="bottom" secondItem="Z22-dx-eK2" secondAttribute="bottom" id="RDx-n4-tzh"/>
+                            <constraint firstItem="Z22-dx-eK2" firstAttribute="trailing" secondItem="7CL-Be-rvk" secondAttribute="trailing" constant="16" id="Rb8-g3-3lE"/>
+                            <constraint firstItem="Rc6-rd-MVX" firstAttribute="centerY" secondItem="AAu-1N-aop" secondAttribute="centerY" id="TxM-xj-dZE"/>
+                            <constraint firstItem="yNi-vY-rCW" firstAttribute="top" secondItem="7CL-Be-rvk" secondAttribute="bottom" constant="8" id="VvU-jA-Qob"/>
+                            <constraint firstItem="JHq-Ph-qV7" firstAttribute="top" secondItem="Z22-dx-eK2" secondAttribute="top" constant="24" id="bJg-Ir-bqM"/>
+                            <constraint firstItem="8zh-v7-m2Q" firstAttribute="top" secondItem="AAu-1N-aop" secondAttribute="bottom" id="ede-Hu-twT"/>
+                            <constraint firstItem="7CL-Be-rvk" firstAttribute="top" secondItem="Z22-dx-eK2" secondAttribute="top" constant="19" id="hw3-Nn-HgO"/>
+                            <constraint firstItem="Z22-dx-eK2" firstAttribute="trailing" secondItem="yNi-vY-rCW" secondAttribute="trailing" constant="16" id="ncS-Tz-bhw"/>
+                            <constraint firstItem="JHq-Ph-qV7" firstAttribute="leading" secondItem="Z22-dx-eK2" secondAttribute="leading" constant="16" id="oXA-IA-GxB"/>
+                            <constraint firstItem="8zh-v7-m2Q" firstAttribute="leading" secondItem="Z22-dx-eK2" secondAttribute="leading" id="w5Y-FJ-WHu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z22-dx-eK2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pKu-7W-8Yl"/>
+                    <connections>
+                        <outlet property="buttonBuySell" destination="yNi-vY-rCW" id="sdj-q5-0pB"/>
+                        <outlet property="labelAmount" destination="JHq-Ph-qV7" id="iGQ-9s-stp"/>
+                        <outlet property="pickerCoins" destination="8zh-v7-m2Q" id="Vwu-ib-OXa"/>
+                        <outlet property="textFieldAmount" destination="7CL-Be-rvk" id="CqE-ak-P4X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-Y3-OHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="-210"/>
         </scene>
     </scenes>
 </document>

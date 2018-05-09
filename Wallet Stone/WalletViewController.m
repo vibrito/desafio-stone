@@ -6,11 +6,6 @@
 //  Copyright © 2018 Vinicius Brito. All rights reserved.
 //
 
-//MM-DD-AAAA
-//https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?%40dataCotacao=%2705-07-2018%27&%24format=json
-
-//https://www.mercadobitcoin.net/api/BTC/ticker/
-
 #import "WalletViewController.h"
 #import "AFHTTPSessionManager.h"
 #import "Coin.h"
@@ -19,13 +14,17 @@
 #import "Reachability.h"
 #import "AppDelegate.h"
 #import "UserService.h"
+#import "MBProgressHUD.h"
+#import "OperationsViewController.h"
 
 #import "User.h"
  
 @interface WalletViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *arrayCoins;
+@property (nonatomic, strong) NSMutableArray *arrayUserCoins;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (nonatomic, strong) User *user;
 
 @end
 
@@ -35,7 +34,8 @@
 {
     [super viewDidLoad];
     
-    self.arrayCoins = [[NSMutableArray alloc] init];
+    self.arrayCoins = [NSMutableArray new];
+    self.arrayUserCoins = [NSMutableArray new];
     
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.tableViewWallet addSubview:self.refreshControl];
@@ -44,11 +44,25 @@
     [self callCotations];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.user = [[UserService sharedInstance] getUserLogged];
+    self.arrayUserCoins = [NSMutableArray new];
+    for (RLMObject *object in self.user.coins)
+    {
+        UserCoin *comment = [[UserCoin alloc] initWithValue:object];
+        [self.arrayUserCoins addObject:comment];
+    }
+    
+    [self.tableViewWallet reloadData];
+}
+
 - (void)callCotations
 {
-    
+    [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].delegate.window animated:YES];
     Reachability* reach = [Reachability reachabilityWithHostname:@"www.google.com"];
-
+    
+    //TODO: Criar uma fila para só atualizar no fim do download
     if (reach.isReachable)
     {
         self.arrayCoins = [[NSMutableArray alloc] init];
@@ -87,8 +101,26 @@
 
 - (void)endRefresh
 {
+    [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].delegate.window animated:YES];
     [self.tableViewWallet reloadData];
     [self.refreshControl endRefreshing];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if  ([segue.identifier isEqualToString:@"SegueBuySell"])
+    {
+        NSIndexPath *index = sender;
+        OperationsViewController *vc = [segue destinationViewController];
+        if  (index.section == 1)
+        {
+            vc.coin = self.arrayCoins[index.row];
+        }
+        else
+        {
+            vc.coin = self.arrayUserCoins[index.row];
+        }
+    }
 }
 
 - (IBAction)logout:(id)sender
@@ -128,7 +160,7 @@
 {
     if (section == 0)
     {
-        return 1;
+        return self.arrayUserCoins.count;
     }
     else
     {
@@ -147,7 +179,10 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         }
         
-        cell.textLabel.text = @"R$ 100000";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        UserCoin *coin = self.arrayUserCoins[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %.2f", coin.acronym, coin.amount];
         return cell;
     }
     else
@@ -159,12 +194,19 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         }
         
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         Coin *coin = self.arrayCoins[indexPath.row];
         cell.textLabel.text = coin.name;
         cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %.2f", coin.acronym, coin.priceSell];
         
         return cell;
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"SegueBuySell" sender:indexPath];
 }
 
 @end

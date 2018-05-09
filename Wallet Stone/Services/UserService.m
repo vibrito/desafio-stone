@@ -7,6 +7,7 @@
 //
 
 #import "UserService.h"
+#import "UserCoin.h"
 
 @implementation UserService
 
@@ -34,9 +35,19 @@
 //    [realm commitWriteTransaction];
     
     
+    UserCoin *real = [UserCoin new];
+    real.acronym = @"BRL";
+    real.priceSell =  1;
+    real.priceBuy =  1;
+    real.name = @"Real";
+    real.amount = 100000;
+    
+    User *newUser = [User new];
+    [newUser.coins addObject:real];
+    
     RLMRealm *realm = [RLMRealm defaultRealm];
     [realm beginWriteTransaction];
-    [User createOrUpdateInRealm:realm withValue:@{@"name": @"Vinícius Brito", @"login": @"vibrito@gmail.com", @"password": @"ad1bia", @"isLogged": @NO}];
+    [User createOrUpdateInRealm:realm withValue:@{@"name": @"Vinícius Brito", @"login": @"vibrito@gmail.com", @"password": @"ad1bia", @"isLogged": @NO, @"coins": newUser.coins}];
     [realm commitWriteTransaction];
     
     return NO;
@@ -84,7 +95,6 @@
     [realm beginWriteTransaction];
     [User createOrUpdateInRealm:realm withValue:@{@"login": userLogged.login, @"isLogged": @NO}];
     [realm commitWriteTransaction];
-    
 }
 
 - (BOOL)hasUserLogged

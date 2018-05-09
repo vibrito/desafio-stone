@@ -25,6 +25,8 @@
 		BD9C002E20A275A200C87080 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9C002D20A275A200C87080 /* SystemConfiguration.framework */; };
 		BD9C003120A276DB00C87080 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003020A276DB00C87080 /* User.m */; };
 		BD9C003720A29B5C00C87080 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003620A29B5C00C87080 /* UserService.m */; };
+		BD9C003A20A2B60C00C87080 /* OperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003920A2B60C00C87080 /* OperationsViewController.m */; };
+		BD9C003D20A2C45800C87080 /* UserCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003C20A2C45800C87080 /* UserCoin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,10 @@
 		BD9C003020A276DB00C87080 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BD9C003520A29B5C00C87080 /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		BD9C003620A29B5C00C87080 /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
+		BD9C003820A2B60C00C87080 /* OperationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationsViewController.h; sourceTree = "<group>"; };
+		BD9C003920A2B60C00C87080 /* OperationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationsViewController.m; sourceTree = "<group>"; };
+		BD9C003B20A2C45800C87080 /* UserCoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCoin.h; sourceTree = "<group>"; };
+		BD9C003C20A2C45800C87080 /* UserCoin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCoin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 				BD1253B6209BAB9B00050C4F /* WalletViewController.m */,
 				BD1253B8209BABDD00050C4F /* HistoryViewController.h */,
 				BD1253B9209BABDD00050C4F /* HistoryViewController.m */,
+				BD9C003820A2B60C00C87080 /* OperationsViewController.h */,
+				BD9C003920A2B60C00C87080 /* OperationsViewController.m */,
 				BD5E595A2098253C00B8BF36 /* Login.storyboard */,
 				BD1253B3209BA12700050C4F /* Main.storyboard */,
 				BD5E595D2098253D00B8BF36 /* Assets.xcassets */,
@@ -140,6 +148,8 @@
 				BD9C001E20A243E000C87080 /* Coin.m */,
 				BD9C002F20A276DB00C87080 /* User.h */,
 				BD9C003020A276DB00C87080 /* User.m */,
+				BD9C003B20A2C45800C87080 /* UserCoin.h */,
+				BD9C003C20A2C45800C87080 /* UserCoin.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,9 +300,11 @@
 				BD5E59592098253C00B8BF36 /* LoginViewController.m in Sources */,
 				BD5E59642098253D00B8BF36 /* main.m in Sources */,
 				BD5E59562098253C00B8BF36 /* AppDelegate.m in Sources */,
+				BD9C003A20A2B60C00C87080 /* OperationsViewController.m in Sources */,
 				BD5E596C209832F200B8BF36 /* RegisterViewController.m in Sources */,
 				BD9C003720A29B5C00C87080 /* UserService.m in Sources */,
 				BD9C002C20A2754A00C87080 /* Reachability.m in Sources */,
+				BD9C003D20A2C45800C87080 /* UserCoin.m in Sources */,
 				BD9C002220A25C6F00C87080 /* BritaService.m in Sources */,
 				BD9C003120A276DB00C87080 /* User.m in Sources */,
 				BD9C002520A25C8200C87080 /* BitcoinService.m in Sources */,
