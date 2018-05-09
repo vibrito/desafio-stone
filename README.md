@@ -1,29 +1,18 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Resposta ao Desafio da Stone em Objective-C. 
 
-### What is this repository for? ###
+### Gerenciador de dependências ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* CocoaPods
 
-### How do I get set up? ###
+### Frameworks ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* AFNetworking
+* Realm
+* MBProgressHud
 
-### Contribution guidelines ###
+### O que falta? ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Melhor tratamento do teclado, que atualmente esconde alguns compontes em algumas telas.
+* Implementar o "Esqueci Senha"
