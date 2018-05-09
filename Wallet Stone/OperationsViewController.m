@@ -63,15 +63,23 @@
     if (amountToSpend <= cointToSpend.amount * cointToSpend.priceSell)
     {
         double newAmount = cointToSpend.amount - (amountToSpend / cointToSpend.priceSell);
+        BOOL hasCoin = NO;
+        UserCoin *coinToOp = [UserCoin new];
         
-        NSString *coinAcr = [NSString stringWithFormat:@"acronym ==[c] '%@'", self.coin.acronym];
-        RLMResults<UserCoin *> *coinToOp = [UserCoin objectsWhere:coinAcr];
+        for (UserCoin *coin in self.user.coins)
+        {
+            if ([coin.acronym isEqualToString:self.coin.acronym])
+            {
+                coinToOp = coin;
+                hasCoin = YES;
+            }
+        }
         
-        if (coinToOp.count > 0)
+        if (hasCoin == YES)
         {
             [realm beginWriteTransaction];
             cointToSpend.amount = newAmount;
-            coinToOp[0].amount = amountToBuy + coinToOp[0].amount;
+            coinToOp.amount = amountToBuy + coinToOp.amount;
             [realm commitWriteTransaction];
         }
         else

@@ -10,21 +10,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Histórico-->
         <scene sceneID="b0f-OF-u6Q">
             <objects>
                 <viewController id="zCc-wR-WeC" customClass="HistoryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3qf-e6-WnV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-zC-Rup">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="History" id="xMY-cO-OtY">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xMY-cO-OtY" id="W0T-et-cYw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pcb-RA-GMI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="VhG-u6-1DQ"/>
+                    <tabBarItem key="tabBarItem" title="Histórico" id="VhG-u6-1DQ"/>
+                    <connections>
+                        <outlet property="tableViewHistory" destination="zD8-zC-Rup" id="5rk-fe-jgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKe-aV-Cd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="637"/>
+            <point key="canvasLocation" x="932" y="636.4317841079461"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d0T-T0-zuk">
@@ -44,11 +64,11 @@
             </objects>
             <point key="canvasLocation" x="-19" y="304"/>
         </scene>
-        <!--Item-->
+        <!--Carteira-->
         <scene sceneID="WLc-xe-AqD">
             <objects>
                 <navigationController id="Od6-vX-peT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="b9e-hZ-aN4"/>
+                    <tabBarItem key="tabBarItem" title="Carteira" id="b9e-hZ-aN4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bpx-pA-9ZA">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

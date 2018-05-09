@@ -10,9 +10,4 @@
 
 @implementation UserCoin
 
-+ (NSString *)primaryKey
-{
-    return @"acronym";
-}
-
 @end
