@@ -26,36 +26,34 @@
 
 - (BOOL)createUser: (User *)user
 {
-    //TODO: Criar usuário real
-    //TODO: Conferir se o usuário já existe
+    //Checa se o login já foi cadastrado
+    NSString *stringLogin = [NSString stringWithFormat:@"login ==[c] '%@'", user.login];
+    RLMResults<User *> *userCheck = [User objectsWhere:stringLogin];
+    if (userCheck.count > 0)
+    {
+        return NO;
+    }
     
-//    RLMRealm *realm = [RLMRealm defaultRealm];
-//    [realm beginWriteTransaction];
-//    [User createOrUpdateInRealm:realm withValue:@{@"name": user.name, @"login": user.login, @"password": user.password, @"isLogged": @YES}];
-//    [realm commitWriteTransaction];
-    
-    
+    User *newUser = [User new];
     UserCoin *real = [UserCoin new];
     real.acronym = @"BRL";
     real.priceSell =  1;
     real.priceBuy =  1;
     real.name = @"Real";
     real.amount = 100000;
-    
-    User *newUser = [User new];
     [newUser.coins addObject:real];
     
     RLMRealm *realm = [RLMRealm defaultRealm];
     [realm beginWriteTransaction];
-    [User createOrUpdateInRealm:realm withValue:@{@"name": @"Vinícius Brito", @"login": @"vibrito@gmail.com", @"password": @"ad1bia", @"isLogged": @NO, @"coins": newUser.coins}];
+    [User createOrUpdateInRealm:realm withValue:@{@"name": user.name, @"login": user.login, @"password": user.password, @"isLogged": @YES, @"coins": newUser.coins}];
     [realm commitWriteTransaction];
     
-    return NO;
+    return YES;
 }
 
 - (User *)getUserLogged
 {
-    RLMResults<User *> *user = [User objectsWhere:@"isLogged == true"];
+    RLMResults<User *> *user = [User objectsWhere:@"isLogged == 1"];
     if (user.count > 0)
     {
         User *userLogged = user[0];

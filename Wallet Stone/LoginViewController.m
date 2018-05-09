@@ -19,26 +19,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [[UserService sharedInstance] createUser:nil];
 }
 
 - (IBAction)login:(id)sender
 {
-    //TODO: alterar para o login real
-    if ([[UserService sharedInstance] doLogin:@"vibrito@gmail.com" andPassword:@"ad1bia"])
+    if ([[UserService sharedInstance] doLogin:self.textFieldLogin.text andPassword:self.textFieldPassword.text])
     {
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         [appDelegate showMain];
     }
-//    if ([[UserService sharedInstance] doLogin:self.textFieldLogin.text andPassword:self.textFieldPassword.text])
-//    {
-//        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//        [appDelegate showMain];
-//    }
     else
     {
-        NSLog(@"Usuário não encontrado");
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alerta"
+                                                                       message:@"Usuário não encontrado."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
 }
 

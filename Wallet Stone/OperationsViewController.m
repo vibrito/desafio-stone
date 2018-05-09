@@ -40,8 +40,6 @@
     double amountToBuy = [self.textFieldAmount.text doubleValue];
     double amountToSpend = self.coin.priceSell * [self.textFieldAmount.text doubleValue];
     
-    
-
     if ([cointToSpend.acronym isEqualToString:self.coin.acronym] || [self.textFieldAmount.text isEqualToString:@""])
     {
         NSString * stringAlert = @"As moedas de compra e venda são iguais. Por favor escolha outra.";

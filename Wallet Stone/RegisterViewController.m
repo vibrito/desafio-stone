@@ -7,6 +7,8 @@
 //
 
 #import "RegisterViewController.h"
+#import "UserService.h"
+#import "AppDelegate.h"
 
 @interface RegisterViewController ()
 
@@ -23,6 +25,60 @@
 - (IBAction)close:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)register:(id)sender
+{
+    if ([self checkTextField:self.textFieldLogin.text] == false|| [self checkTextField: self.textFieldPassword.text] == false|| [self checkTextField: self.textFieldName.text] == false)
+    {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alerta"
+                                                                       message:@"Um ou mais campos não parecem corretos"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else
+    {
+        User *user = [User new];
+        user.name = self.textFieldName.text;
+        user.password = self.textFieldPassword.text;
+        user.login = self.textFieldLogin.text;
+
+        if ([[UserService sharedInstance] createUser:user])
+        {
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            [appDelegate showMain];
+        }
+        else
+        {
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alerta"
+                                                                           message:@"Usuário já cadastrado."
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }
+}
+
+- (BOOL)checkTextField: (NSString *)string
+{
+    NSString *trimmedString = [string stringByTrimmingCharactersInSet:
+                               [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    if ([trimmedString isEqualToString:@""] || trimmedString.length < 6)
+    {
+        return false;
+    }
+    
+    return true;
 }
 
 @end
