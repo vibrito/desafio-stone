@@ -24,6 +24,9 @@
     self.title = self.coin.name;
     self.indexCoin = 0;
     self.user = [[UserService sharedInstance] getUserLogged];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (IBAction)buySell:(id)sender
@@ -59,65 +62,78 @@
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    
-    if (amountToSpend <= cointToSpend.amount * cointToSpend.priceSell)
+    else
     {
-        double newAmount = cointToSpend.amount - (amountToSpend / cointToSpend.priceSell);
-        BOOL hasCoin = NO;
-        UserCoin *coinToOp = [UserCoin new];
-        
-        for (UserCoin *coin in self.user.coins)
+        if (amountToSpend <= cointToSpend.amount * cointToSpend.priceSell)
         {
-            if ([coin.acronym isEqualToString:self.coin.acronym])
+            double newAmount = cointToSpend.amount - (amountToSpend / cointToSpend.priceSell);
+            BOOL hasCoin = NO;
+            UserCoin *coinToOp = [UserCoin new];
+            
+            for (UserCoin *coin in self.user.coins)
             {
-                coinToOp = coin;
-                hasCoin = YES;
+                if ([coin.acronym isEqualToString:self.coin.acronym])
+                {
+                    coinToOp = coin;
+                    hasCoin = YES;
+                }
             }
-        }
-        
-        if (hasCoin == YES)
-        {
+            
+            if (hasCoin == YES)
+            {
+                [realm beginWriteTransaction];
+                cointToSpend.amount = newAmount;
+                coinToOp.amount = amountToBuy + coinToOp.amount;
+                [realm commitWriteTransaction];
+            }
+            else
+            {
+                UserCoin *newCoin = [UserCoin new];
+                newCoin.acronym = self.coin.acronym;
+                newCoin.priceSell =  self.coin.priceSell;
+                newCoin.priceBuy =  self.coin.priceBuy;
+                newCoin.name = self.coin.name;
+                newCoin.amount = amountToBuy;
+                
+                [realm beginWriteTransaction];
+                cointToSpend.amount = newAmount;
+                [self.user.coins addObject:newCoin];
+                [realm commitWriteTransaction];
+            }
+            
+            HistoryItem *history = [HistoryItem new];
+            history.coinBuyed = self.coin.name;
+            history.coinSelled = cointToSpend.name;
+            history.amountSpend = amountToSpend;
+            history.amountBuyed = amountToBuy;
+            history.date = [NSDate date];
             [realm beginWriteTransaction];
             cointToSpend.amount = newAmount;
-            coinToOp.amount = amountToBuy + coinToOp.amount;
+            [self.user.history addObject:history];
             [realm commitWriteTransaction];
+            
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sucesso"
+                                                                           message:@"Compra efetuada com sucesso."
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {[self.navigationController popViewControllerAnimated:YES];}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
         }
         else
         {
-            UserCoin *newCoin = [UserCoin new];
-            newCoin.acronym = self.coin.acronym;
-            newCoin.priceSell =  self.coin.priceSell;
-            newCoin.priceBuy =  self.coin.priceBuy;
-            newCoin.name = self.coin.name;
-            newCoin.amount = amountToBuy;
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alerta"
+                                                                           message:@"Valor insuficiente para a compra."
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
             
-            [realm beginWriteTransaction];
-            cointToSpend.amount = newAmount;
-            [self.user.coins addObject:newCoin];
-            [realm commitWriteTransaction];
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
         }
-        
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sucesso"
-                                                                       message:@"Compra efetuada com sucesso."
-                                                                preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                              handler:^(UIAlertAction * action) {[self.navigationController popViewControllerAnimated:YES];}];
-        
-        [alert addAction:defaultAction];
-        [self presentViewController:alert animated:YES completion:nil];
-    }
-    else
-    {
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alerta"
-                                                                       message:@"Valor insuficiente para a compra."
-                                                                preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                              handler:^(UIAlertAction * action) {}];
-        
-        [alert addAction:defaultAction];
-        [self presentViewController:alert animated:YES completion:nil];
     }
 }
 
@@ -141,6 +157,11 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     self.indexCoin = row;
+}
+
+- (void)dismissKeyboard
+{
+    [self.textFieldAmount resignFirstResponder];
 }
 
 @end

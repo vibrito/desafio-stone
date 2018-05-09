@@ -17,8 +17,6 @@
 #import "MBProgressHUD.h"
 #import "OperationsViewController.h"
 
-#import "User.h"
- 
 @interface WalletViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *arrayCoins;

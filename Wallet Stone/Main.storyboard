@@ -11,6 +11,23 @@
     </dependencies>
     <scenes>
         <!--Histórico-->
+        <scene sceneID="0Sa-Fk-XMl">
+            <objects>
+                <navigationController id="tRe-VF-Vn4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Histórico" id="zmc-UP-92Q"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ffT-hJ-D0P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zCc-wR-WeC" kind="relationship" relationship="rootViewController" id="PWk-Wn-oSF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddl-Cj-bzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="603"/>
+        </scene>
+        <!--Histórico-->
         <scene sceneID="b0f-OF-u6Q">
             <objects>
                 <viewController id="zCc-wR-WeC" customClass="HistoryViewController" sceneMemberID="viewController">
@@ -23,28 +40,49 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="History" id="xMY-cO-OtY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="History" textLabel="pSJ-11-bZV" detailTextLabel="cn9-nq-GVd" style="IBUITableViewCellStyleSubtitle" id="xMY-cO-OtY">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xMY-cO-OtY" id="W0T-et-cYw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pSJ-11-bZV">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cn9-nq-GVd">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zCc-wR-WeC" id="gKG-6z-Jup"/>
+                                    <outlet property="delegate" destination="zCc-wR-WeC" id="JhI-7C-fLD"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pcb-RA-GMI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Histórico" id="VhG-u6-1DQ"/>
+                    <navigationItem key="navigationItem" id="OVF-ff-jKq"/>
                     <connections>
                         <outlet property="tableViewHistory" destination="zD8-zC-Rup" id="5rk-fe-jgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKe-aV-Cd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="636.4317841079461"/>
+            <point key="canvasLocation" x="1532" y="688"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d0T-T0-zuk">
@@ -57,7 +95,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Od6-vX-peT" kind="relationship" relationship="viewControllers" id="T4T-Ce-Z2g"/>
-                        <segue destination="zCc-wR-WeC" kind="relationship" relationship="viewControllers" id="3kn-fr-Yoy"/>
+                        <segue destination="tRe-VF-Vn4" kind="relationship" relationship="viewControllers" id="FXD-uL-m9A"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpo-te-sEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,6 +199,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Byg-Df-dtx" id="on2-AI-aNt"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantidade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHq-Ph-qV7">
                                 <rect key="frame" x="16" y="88" width="94" height="21"/>

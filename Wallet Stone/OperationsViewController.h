@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Coin.h"
 
-@interface OperationsViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface OperationsViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 
 @property (weak, nonatomic) Coin *coin;
 @property (weak, nonatomic) IBOutlet UILabel *labelAmount;

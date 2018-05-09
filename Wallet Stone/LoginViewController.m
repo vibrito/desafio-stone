@@ -19,10 +19,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (IBAction)login:(id)sender
 {
+    [self dismissKeyboard];
+    
     if ([[UserService sharedInstance] doLogin:self.textFieldLogin.text andPassword:self.textFieldPassword.text])
     {
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -50,6 +55,27 @@
 - (IBAction)forget:(id)sender
 {
     //TODO: implementar o esqueci senha
+}
+
+//MARK: TextField Methods
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (self.textFieldLogin.isFirstResponder)
+    {
+        [self.textFieldPassword becomeFirstResponder];
+    }
+    else
+    {
+        [self login:nil];
+    }
+    
+    return YES;
+}
+
+- (void)dismissKeyboard
+{
+    [self.textFieldLogin resignFirstResponder];
+    [self.textFieldPassword resignFirstResponder];
 }
 
 @end

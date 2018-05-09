@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Realm/Realm.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldLogin;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;

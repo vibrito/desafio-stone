@@ -19,6 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
 }
 
 //MARK: Actions
@@ -29,6 +32,8 @@
 
 - (IBAction)register:(id)sender
 {
+    [self dismissKeyboard];
+    
     if ([self checkTextField:self.textFieldLogin.text] == false|| [self checkTextField: self.textFieldPassword.text] == false|| [self checkTextField: self.textFieldName.text] == false)
     {
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alerta"
@@ -79,6 +84,32 @@
     }
     
     return true;
+}
+
+//MARK: TextField Methods
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (self.textFieldLogin.isFirstResponder)
+    {
+        [self.textFieldPassword becomeFirstResponder];
+    }
+    else if (self.textFieldPassword.isFirstResponder)
+    {
+        [self.textFieldName becomeFirstResponder];
+    }
+    else
+    {
+        [self register:nil];
+    }
+    
+    return YES;
+}
+
+- (void)dismissKeyboard
+{
+    [self.textFieldLogin resignFirstResponder];
+    [self.textFieldPassword resignFirstResponder];
+    [self.textFieldName resignFirstResponder];
 }
 
 @end
