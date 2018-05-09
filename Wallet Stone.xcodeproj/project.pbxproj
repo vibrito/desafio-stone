@@ -7,25 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461AAA1EBB8EDC31B9BCEC6C /* Pods_Wallet_Stone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791472D94DCC1F0E8AF8069B /* Pods_Wallet_Stone.framework */; };
+		BD1253B4209BA12700050C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1253B3209BA12700050C4F /* Main.storyboard */; };
+		BD1253B7209BAB9B00050C4F /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1253B6209BAB9B00050C4F /* WalletViewController.m */; };
+		BD1253BA209BABDD00050C4F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1253B9209BABDD00050C4F /* HistoryViewController.m */; };
 		BD5E59562098253C00B8BF36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59552098253C00B8BF36 /* AppDelegate.m */; };
-		BD5E59592098253C00B8BF36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59582098253C00B8BF36 /* ViewController.m */; };
-		BD5E595C2098253C00B8BF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5E595A2098253C00B8BF36 /* Main.storyboard */; };
+		BD5E59592098253C00B8BF36 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59582098253C00B8BF36 /* LoginViewController.m */; };
+		BD5E595C2098253C00B8BF36 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5E595A2098253C00B8BF36 /* Login.storyboard */; };
 		BD5E595E2098253D00B8BF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5E595D2098253D00B8BF36 /* Assets.xcassets */; };
 		BD5E59612098253D00B8BF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5E595F2098253D00B8BF36 /* LaunchScreen.storyboard */; };
 		BD5E59642098253D00B8BF36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59632098253D00B8BF36 /* main.m */; };
+		BD5E596C209832F200B8BF36 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E596B209832F200B8BF36 /* RegisterViewController.m */; };
+		BD9C001F20A243E000C87080 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C001E20A243E000C87080 /* Coin.m */; };
+		BD9C002220A25C6F00C87080 /* BritaService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C002120A25C6F00C87080 /* BritaService.m */; };
+		BD9C002520A25C8200C87080 /* BitcoinService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C002420A25C8200C87080 /* BitcoinService.m */; };
+		BD9C002C20A2754A00C87080 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C002B20A2754A00C87080 /* Reachability.m */; };
+		BD9C002E20A275A200C87080 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9C002D20A275A200C87080 /* SystemConfiguration.framework */; };
+		BD9C003120A276DB00C87080 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003020A276DB00C87080 /* User.m */; };
+		BD9C003720A29B5C00C87080 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003620A29B5C00C87080 /* UserService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27D90D743944DDEEF92C7E6A /* Pods-Wallet Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet Stone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone.debug.xcconfig"; sourceTree = "<group>"; };
+		4684FE534E33B83C57CC4276 /* Pods-Wallet Stone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet Stone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone.release.xcconfig"; sourceTree = "<group>"; };
+		791472D94DCC1F0E8AF8069B /* Pods_Wallet_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet_Stone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1253B3209BA12700050C4F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BD1253B5209BAB9B00050C4F /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		BD1253B6209BAB9B00050C4F /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		BD1253B8209BABDD00050C4F /* HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		BD1253B9209BABDD00050C4F /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		BD5E59512098253C00B8BF36 /* Wallet Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallet Stone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5E59542098253C00B8BF36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD5E59552098253C00B8BF36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BD5E59572098253C00B8BF36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BD5E59582098253C00B8BF36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BD5E595B2098253C00B8BF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD5E59572098253C00B8BF36 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BD5E59582098253C00B8BF36 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BD5E595B2098253C00B8BF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		BD5E595D2098253D00B8BF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD5E59602098253D00B8BF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD5E59622098253D00B8BF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD5E59632098253D00B8BF36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD5E596A209832F200B8BF36 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		BD5E596B209832F200B8BF36 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		BD9C001D20A243E000C87080 /* Coin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
+		BD9C001E20A243E000C87080 /* Coin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
+		BD9C002020A25C6F00C87080 /* BritaService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BritaService.h; sourceTree = "<group>"; };
+		BD9C002120A25C6F00C87080 /* BritaService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BritaService.m; sourceTree = "<group>"; };
+		BD9C002320A25C8200C87080 /* BitcoinService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitcoinService.h; sourceTree = "<group>"; };
+		BD9C002420A25C8200C87080 /* BitcoinService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitcoinService.m; sourceTree = "<group>"; };
+		BD9C002A20A2754A00C87080 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BD9C002B20A2754A00C87080 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BD9C002D20A275A200C87080 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BD9C002F20A276DB00C87080 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BD9C003020A276DB00C87080 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BD9C003520A29B5C00C87080 /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		BD9C003620A29B5C00C87080 /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9C002E20A275A200C87080 /* SystemConfiguration.framework in Frameworks */,
+				461AAA1EBB8EDC31B9BCEC6C /* Pods_Wallet_Stone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +81,8 @@
 			children = (
 				BD5E59532098253C00B8BF36 /* Wallet Stone */,
 				BD5E59522098253C00B8BF36 /* Products */,
+				C25460474C03623152DC9D90 /* Pods */,
+				EF8E4B09E63E994ECB6B2C0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +97,78 @@
 		BD5E59532098253C00B8BF36 /* Wallet Stone */ = {
 			isa = PBXGroup;
 			children = (
+				BD9C002920A2753100C87080 /* Helpers */,
+				BD9C001C20A243CD00C87080 /* Model */,
+				BD9C001B20A0E49700C87080 /* Services */,
 				BD5E59542098253C00B8BF36 /* AppDelegate.h */,
 				BD5E59552098253C00B8BF36 /* AppDelegate.m */,
-				BD5E59572098253C00B8BF36 /* ViewController.h */,
-				BD5E59582098253C00B8BF36 /* ViewController.m */,
-				BD5E595A2098253C00B8BF36 /* Main.storyboard */,
+				BD5E59572098253C00B8BF36 /* LoginViewController.h */,
+				BD5E59582098253C00B8BF36 /* LoginViewController.m */,
+				BD5E596A209832F200B8BF36 /* RegisterViewController.h */,
+				BD5E596B209832F200B8BF36 /* RegisterViewController.m */,
+				BD1253B5209BAB9B00050C4F /* WalletViewController.h */,
+				BD1253B6209BAB9B00050C4F /* WalletViewController.m */,
+				BD1253B8209BABDD00050C4F /* HistoryViewController.h */,
+				BD1253B9209BABDD00050C4F /* HistoryViewController.m */,
+				BD5E595A2098253C00B8BF36 /* Login.storyboard */,
+				BD1253B3209BA12700050C4F /* Main.storyboard */,
 				BD5E595D2098253D00B8BF36 /* Assets.xcassets */,
 				BD5E595F2098253D00B8BF36 /* LaunchScreen.storyboard */,
 				BD5E59622098253D00B8BF36 /* Info.plist */,
 				BD5E59632098253D00B8BF36 /* main.m */,
 			);
 			path = "Wallet Stone";
+			sourceTree = "<group>";
+		};
+		BD9C001B20A0E49700C87080 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BD9C003520A29B5C00C87080 /* UserService.h */,
+				BD9C003620A29B5C00C87080 /* UserService.m */,
+				BD9C002020A25C6F00C87080 /* BritaService.h */,
+				BD9C002120A25C6F00C87080 /* BritaService.m */,
+				BD9C002320A25C8200C87080 /* BitcoinService.h */,
+				BD9C002420A25C8200C87080 /* BitcoinService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD9C001C20A243CD00C87080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD9C001D20A243E000C87080 /* Coin.h */,
+				BD9C001E20A243E000C87080 /* Coin.m */,
+				BD9C002F20A276DB00C87080 /* User.h */,
+				BD9C003020A276DB00C87080 /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD9C002920A2753100C87080 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BD9C002A20A2754A00C87080 /* Reachability.h */,
+				BD9C002B20A2754A00C87080 /* Reachability.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C25460474C03623152DC9D90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27D90D743944DDEEF92C7E6A /* Pods-Wallet Stone.debug.xcconfig */,
+				4684FE534E33B83C57CC4276 /* Pods-Wallet Stone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF8E4B09E63E994ECB6B2C0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD9C002D20A275A200C87080 /* SystemConfiguration.framework */,
+				791472D94DCC1F0E8AF8069B /* Pods_Wallet_Stone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD5E59672098253E00B8BF36 /* Build configuration list for PBXNativeTarget "Wallet Stone" */;
 			buildPhases = (
+				F8AFFD5DFFEC66DF11B994C2 /* [CP] Check Pods Manifest.lock */,
 				BD5E594D2098253B00B8BF36 /* Sources */,
 				BD5E594E2098253B00B8BF36 /* Frameworks */,
 				BD5E594F2098253B00B8BF36 /* Resources */,
+				96D9FFFFA2EC5C383B48EFFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,32 +232,85 @@
 			files = (
 				BD5E59612098253D00B8BF36 /* LaunchScreen.storyboard in Resources */,
 				BD5E595E2098253D00B8BF36 /* Assets.xcassets in Resources */,
-				BD5E595C2098253C00B8BF36 /* Main.storyboard in Resources */,
+				BD5E595C2098253C00B8BF36 /* Login.storyboard in Resources */,
+				BD1253B4209BA12700050C4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96D9FFFFA2EC5C383B48EFFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8AFFD5DFFEC66DF11B994C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wallet Stone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD5E594D2098253B00B8BF36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5E59592098253C00B8BF36 /* ViewController.m in Sources */,
+				BD5E59592098253C00B8BF36 /* LoginViewController.m in Sources */,
 				BD5E59642098253D00B8BF36 /* main.m in Sources */,
 				BD5E59562098253C00B8BF36 /* AppDelegate.m in Sources */,
+				BD5E596C209832F200B8BF36 /* RegisterViewController.m in Sources */,
+				BD9C003720A29B5C00C87080 /* UserService.m in Sources */,
+				BD9C002C20A2754A00C87080 /* Reachability.m in Sources */,
+				BD9C002220A25C6F00C87080 /* BritaService.m in Sources */,
+				BD9C003120A276DB00C87080 /* User.m in Sources */,
+				BD9C002520A25C8200C87080 /* BitcoinService.m in Sources */,
+				BD1253B7209BAB9B00050C4F /* WalletViewController.m in Sources */,
+				BD9C001F20A243E000C87080 /* Coin.m in Sources */,
+				BD1253BA209BABDD00050C4F /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD5E595A2098253C00B8BF36 /* Main.storyboard */ = {
+		BD5E595A2098253C00B8BF36 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BD5E595B2098253C00B8BF36 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		BD5E595F2098253D00B8BF36 /* LaunchScreen.storyboard */ = {
@@ -281,11 +436,13 @@
 		};
 		BD5E59682098253E00B8BF36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D90D743944DDEEF92C7E6A /* Pods-Wallet Stone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
 				INFOPLIST_FILE = "Wallet Stone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +455,13 @@
 		};
 		BD5E59692098253E00B8BF36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4684FE534E33B83C57CC4276 /* Pods-Wallet Stone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
 				INFOPLIST_FILE = "Wallet Stone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

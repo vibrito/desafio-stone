@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[LoginViewController login:]:LoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "po NSHomeDirectory()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__35-[WalletViewController viewDidLoad]_block_invoke_3:WalletViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__35-[WalletViewController viewDidLoad]_block_invoke:WalletViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WalletViewController callCotations]:WalletViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

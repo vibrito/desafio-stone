@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UserService.h"
 
 @interface AppDelegate ()
 
@@ -15,7 +16,19 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    if ([[UserService sharedInstance] hasUserLogged])
+    {
+        [self showMain];
+    }
+    else
+    {
+        [self showLogin];
+    }
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -47,5 +60,24 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)showLogin
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    UIViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"loginViewController"];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+    
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)showMain
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+    
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+}
 
 @end
