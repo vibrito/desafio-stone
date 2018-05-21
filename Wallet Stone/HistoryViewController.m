@@ -51,8 +51,10 @@
     
     HistoryItem *history = [HistoryItem new];
     history = self.user.history[indexPath.row];
-    NSString *stringHistory = [NSString stringWithFormat:@"Compra de %.4f %@s com %@", history.amountBought, history.coinBought, history.coinSold];
     
+    NSNumber *num1 = [NSNumber numberWithDouble:history.amountBought];
+    NSString *numberStr = [NSNumberFormatter localizedStringFromNumber:num1 numberStyle:NSNumberFormatterDecimalStyle];
+    NSString *stringHistory = [NSString stringWithFormat:@"Compra de %@ %@s com %@", numberStr, history.coinBought, history.coinSold];
     
     NSString *dateString = [NSDateFormatter localizedStringFromDate:history.date
                                                           dateStyle:NSDateFormatterShortStyle
