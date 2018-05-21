@@ -54,8 +54,20 @@
     
     NSNumber *num1 = [NSNumber numberWithDouble:history.amountBought];
     NSString *numberStr = [NSNumberFormatter localizedStringFromNumber:num1 numberStyle:NSNumberFormatterDecimalStyle];
-    NSString *stringHistory = [NSString stringWithFormat:@"Compra de %@ %@s com %@", numberStr, history.coinBought, history.coinSold];
-    
+    NSString *stringHistory = [NSString stringWithFormat:@"Compra de %@ %@ com %@", numberStr, history.coinBought, history.coinSold];
+
+    if (history.amountBought >= 2)
+    {
+        if ([history.coinBought isEqualToString:@"Real"])
+        {
+            stringHistory = [NSString stringWithFormat:@"Compra de %@ Reais com %@", numberStr, history.coinSold];
+        }
+        else
+        {
+            stringHistory = [NSString stringWithFormat:@"Compra de %@ %@s com %@", numberStr, history.coinBought, history.coinSold];
+        }
+    }
+
     NSString *dateString = [NSDateFormatter localizedStringFromDate:history.date
                                                           dateStyle:NSDateFormatterShortStyle
                                                           timeStyle:NSDateFormatterMediumStyle];
