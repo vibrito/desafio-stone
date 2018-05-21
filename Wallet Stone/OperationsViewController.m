@@ -39,7 +39,8 @@
     RLMRealm *realm = [RLMRealm defaultRealm];
     UserCoin *cointToSpend = self.user.coins[_indexCoin];
     
-    double amountToBuy = [self.textFieldAmount.text doubleValue];
+    NSString* stringDouble = [self.textFieldAmount.text stringByReplacingOccurrencesOfString:@"," withString:@"."];
+    double amountToBuy = [stringDouble doubleValue];
     double amountToSell = self.coin.priceSell * [self.textFieldAmount.text doubleValue];
     
     if ([cointToSpend.acronym isEqualToString:self.coin.acronym] || [self.textFieldAmount.text isEqualToString:@""])
@@ -134,6 +135,52 @@
             [self presentViewController:alert animated:YES completion:nil];
         }
     }
+}
+
+//https://stackoverflow.com/a/4850969/2859731
+//MARK: Text Field Methods
+- (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    static NSString *numbers = @"0123456789";
+    static NSString *numbersPeriod = @"01234567890.";
+    static NSString *numbersComma = @"0123456789,";
+    
+    //NSLog(@"%d %d %@", range.location, range.length, string);
+    if (range.length > 0 && [string length] == 0)
+    {
+        // enable delete
+        return YES;
+    }
+    
+    NSString *symbol = [[NSLocale currentLocale] objectForKey:NSLocaleDecimalSeparator];
+    if (range.location == 0 && [string isEqualToString:symbol])
+    {
+        // decimalseparator should not be first
+        return NO;
+    }
+    NSCharacterSet *characterSet;
+    NSRange separatorRange = [textField.text rangeOfString:symbol];
+    if (separatorRange.location == NSNotFound)
+    {
+        if ([symbol isEqualToString:@"."])
+        {
+            characterSet = [[NSCharacterSet characterSetWithCharactersInString:numbersPeriod] invertedSet];
+        }
+        else
+        {
+            characterSet = [[NSCharacterSet characterSetWithCharactersInString:numbersComma] invertedSet];
+        }
+    }
+    else
+    {
+        // allow 2 characters after the decimal separator
+        if (range.location > (separatorRange.location + 2))
+        {
+            return NO;
+        }
+        characterSet = [[NSCharacterSet characterSetWithCharactersInString:numbers] invertedSet];
+    }
+    return ([[string stringByTrimmingCharactersInSet:characterSet] length] > 0);
 }
 
 //MARK: Picker Methods
