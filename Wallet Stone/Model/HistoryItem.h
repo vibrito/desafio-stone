@@ -11,10 +11,10 @@
 
 @interface HistoryItem : RLMObject
 
-@property (nonatomic, strong) NSString *coinBuyed;
-@property (nonatomic, strong) NSString *coinSelled;
-@property (nonatomic) double amountBuyed;
-@property (nonatomic) double amountSpend;
+@property (nonatomic, strong) NSString *coinBought;
+@property (nonatomic, strong) NSString *coinSold;
+@property (nonatomic) double amountBought;
+@property (nonatomic) double amountSold;
 @property (nonatomic) NSDate *date;
 
 @end

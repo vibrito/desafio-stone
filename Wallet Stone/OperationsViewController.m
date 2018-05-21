@@ -37,11 +37,10 @@
 - (void)buy
 {
     RLMRealm *realm = [RLMRealm defaultRealm];
-    
     UserCoin *cointToSpend = self.user.coins[_indexCoin];
     
     double amountToBuy = [self.textFieldAmount.text doubleValue];
-    double amountToSpend = self.coin.priceSell * [self.textFieldAmount.text doubleValue];
+    double amountToSell = self.coin.priceSell * [self.textFieldAmount.text doubleValue];
     
     if ([cointToSpend.acronym isEqualToString:self.coin.acronym] || [self.textFieldAmount.text isEqualToString:@""])
     {
@@ -64,9 +63,9 @@
     }
     else
     {
-        if (amountToSpend <= cointToSpend.amount * cointToSpend.priceSell)
+        if (amountToSell <= cointToSpend.amount * cointToSpend.priceSell)
         {
-            double newAmount = cointToSpend.amount - (amountToSpend / cointToSpend.priceSell);
+            double newAmount = cointToSpend.amount - (amountToSell / cointToSpend.priceSell);
             BOOL hasCoin = NO;
             UserCoin *coinToOp = [UserCoin new];
             
@@ -102,10 +101,10 @@
             }
             
             HistoryItem *history = [HistoryItem new];
-            history.coinBuyed = self.coin.name;
-            history.coinSelled = cointToSpend.name;
-            history.amountSpend = amountToSpend;
-            history.amountBuyed = amountToBuy;
+            history.coinBought = self.coin.name;
+            history.coinSold = cointToSpend.name;
+            history.amountSold = amountToSell;
+            history.amountBought = amountToBuy;
             history.date = [NSDate date];
             [realm beginWriteTransaction];
             cointToSpend.amount = newAmount;
