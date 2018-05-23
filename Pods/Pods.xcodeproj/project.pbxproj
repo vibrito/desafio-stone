@@ -50,6 +50,7 @@
 		2173B230BBEE0ED0E6DAC8FB99DEE26C /* RLMSyncPermissionOffer.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = BA12DED8D6D7A5ED488DD671B67F2B40 /* RLMSyncPermissionOffer.h */; };
 		240885D3EBE532F94B503C0259B91453 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 624D5CA87EC6CE1ABD94AADD611D4D83 /* object.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		24AE64C77504EF56CDF848BCB6ED9D25 /* RLMRealmConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 135437672DC3E3E805F86C18F140D624 /* RLMRealmConfiguration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		25180975D17BEAAAAF8C2C5F80ADC8D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0545E2AAEDFCFAF805E98D16741B0FFD /* Foundation.framework */; };
 		27C0D53013E7BA1ABF076896C85E5248 /* RLMRealmConfiguration+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C47BBFC26F2E67369F64ECBCCBC2FC /* RLMRealmConfiguration+Sync.h */; };
 		27F64FF3BEC6451E4804E4A2AB3E15D5 /* RLMSyncConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDD791E3684986772C6A56D8023C3EAC /* RLMSyncConfiguration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		282A32C62DC8A05D57B557A3A6E017DD /* Realm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF7B1BA5A3A6FF6C99A749AB7270791 /* Realm.h */; };
@@ -84,8 +85,9 @@
 		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A99BEE7A4C2D57BEDCB4EC79A8594DC /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		481DF7CBB3FC83E3E95DC0E5EC81531A /* RLMCollection_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2211518CB6A17512F61C0DED12DFAFA7 /* RLMCollection_Private.h */; };
 		48B1B07AA074F55AE2BA9595DAFEAFCC /* RLMSyncManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6389DB218E2709B0D97E7F92BE99 /* RLMSyncManager.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		48D8D5DC8B4506CC461FDB0CCA14FB8A /* Pods-Wallet Stone Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E79E56CC01C8033DBAD1B5A27E86CD0 /* Pods-Wallet Stone Tests-dummy.m */; };
 		4925E75CAF1E071802B6D0288A8CFBB0 /* RLMRealmConfiguration+Sync.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8B9D56CE9D842C2DBFEFB0135B732 /* RLMRealmConfiguration+Sync.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		4A1628B2284F749ABB912E4059781DB2 /* Pods-Wallet Stone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0F9E4A112EE7C085E32534970D9FC0 /* Pods-Wallet Stone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A1628B2284F749ABB912E4059781DB2 /* Pods-Wallet Stone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD0197F7495C0D019A6AD146B87C8AB /* Pods-Wallet Stone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BA8A131921E375EB6BB04B1EB63AC74 /* RLMSyncPermissionResults.mm in Sources */ = {isa = PBXBuildFile; fileRef = 272F6AE9F58DCB04A70A1DBF491EF8D9 /* RLMSyncPermissionResults.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		4BD15E510438F7105E6219318B42ACEA /* RLMSyncPermissionValue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38CA8C0DD238A65237401EF156FB4A5E /* RLMSyncPermissionValue.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		4F94B07712265F078E137D54C0668ACE /* RLMUpdateChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 993721F62388BC3872335FFAB1FD84F4 /* RLMUpdateChecker.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
@@ -220,7 +222,8 @@
 		D3C29D38FAE3DD26B04A72FD41650609 /* RLMSyncPermissionOffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA12DED8D6D7A5ED488DD671B67F2B40 /* RLMSyncPermissionOffer.h */; };
 		D3D4C75F51E24D697B3F8D5958DF4E90 /* RLMSyncPermissionOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99BFE35C61EE744DF1995EEBDD521C /* RLMSyncPermissionOffer.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.9.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A976E1F5E8913C2708D0D0B5D556FF69 /* AFURLSessionManager.m */; };
-		DA56D556FBBDC2C1B668FDAD2A0E6F3C /* Pods-Wallet Stone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C260A622505A172F05777708E96B7719 /* Pods-Wallet Stone-dummy.m */; };
+		DA56D556FBBDC2C1B668FDAD2A0E6F3C /* Pods-Wallet Stone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C71364EF0C02BEEF2549977026AE245 /* Pods-Wallet Stone-dummy.m */; };
+		DBC4D2F39673B3A45FA70F409280CBB8 /* Pods-Wallet Stone Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C597EBA9534BEA30EB98437421CDBD06 /* Pods-Wallet Stone Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBFFC8A2AFBC9B5F16A05351BEDAA32 /* AFNetworkReachabilityManager.m */; };
 		DE479C57CB0EB19188BFA1AEC5476F5D /* RLMSyncPermissionChange.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3B29791BB128A85667CF8368B04E03F9 /* RLMSyncPermissionChange.h */; };
 		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DACFA15EE234EB503052B0547B224D72 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -267,6 +270,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F6039AD3095FC504C3D5D2F352D08B15;
 			remoteInfo = Realm;
+		};
+		EAD1CADA612F90EFA124BD5735CFC145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6039AD3095FC504C3D5D2F352D08B15;
+			remoteInfo = Realm;
+		};
+		F0A8C12E3803EDC41A6004E3FC3DE1CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D52D0EA95610AEC398BBD075BB3A61D;
+			remoteInfo = "Pods-Wallet Stone";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -357,8 +374,10 @@
 		07448F93523428681F63438ED1213F98 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		0870C8B13C34C861352B592E54874971 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		08EE611264051D5B06808D242B0EE3C6 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
+		09A297CCE7D931E174B084D67B866703 /* Pods_Wallet_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Wallet_Stone.framework; path = "Pods-Wallet Stone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B148D59EEFD1A0769B1E91F43012EE6 /* RLMSyncPermissionOfferResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSyncPermissionOfferResponse.m; path = Realm/RLMSyncPermissionOfferResponse.m; sourceTree = "<group>"; };
 		0B79C747C51B0B4B5C996CC4821B8614 /* RLMRealmConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration.h; path = include/RLMRealmConfiguration.h; sourceTree = "<group>"; };
+		0C71364EF0C02BEEF2549977026AE245 /* Pods-Wallet Stone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallet Stone-dummy.m"; sourceTree = "<group>"; };
 		0C80D8E840BFC5A42ABFA33D37D6B4B8 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		0E34AC320132F3B9A595528C1DD5F374 /* RLMSyncConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration.h; path = include/RLMSyncConfiguration.h; sourceTree = "<group>"; };
 		0EBFFC8A2AFBC9B5F16A05351BEDAA32 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
@@ -374,6 +393,8 @@
 		172C1B0235882E4F925F77D7DBD9F2AD /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		1E2F6C7B7FB6188F4817CDD7FA8EB024 /* RLMSyncPermissionOfferResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermissionOfferResponse.h; path = include/RLMSyncPermissionOfferResponse.h; sourceTree = "<group>"; };
 		1E661A31238768291686071ACDA46E54 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		1EF7629924DCF4DA986E8F626D1B720C /* Pods-Wallet Stone Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallet Stone Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1F3DF6085CA32AFD33306B37DD9686DC /* Pods-Wallet Stone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallet Stone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2211518CB6A17512F61C0DED12DFAFA7 /* RLMCollection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection_Private.h; path = include/RLMCollection_Private.h; sourceTree = "<group>"; };
 		2317830BADD1814757C9FD1DB9548D34 /* RLMSyncPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermission.h; path = include/RLMSyncPermission.h; sourceTree = "<group>"; };
 		2324FAE1502A844B93805654D5A24395 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -383,9 +404,11 @@
 		2B3B548BC103597CF01408C2734ED607 /* RLMSyncManager_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncManager_Private.h; path = include/RLMSyncManager_Private.h; sourceTree = "<group>"; };
 		2B5A4E96BAC33D34422E9BECDF801628 /* Realm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Realm.modulemap; sourceTree = "<group>"; };
 		2BCFC3ADAA37CC5F2EDEF0900CB0E407 /* RLMThreadSafeReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMThreadSafeReference.h; path = include/RLMThreadSafeReference.h; sourceTree = "<group>"; };
+		2E79E56CC01C8033DBAD1B5A27E86CD0 /* Pods-Wallet Stone Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallet Stone Tests-dummy.m"; sourceTree = "<group>"; };
 		2EDE474E617F441EFC0454B346A9C72C /* realm_coordinator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = realm_coordinator.cpp; path = Realm/ObjectStore/src/impl/realm_coordinator.cpp; sourceTree = "<group>"; };
 		2F876E9630A4E921FFF3ECC64888B361 /* RLMObjectBase_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Private.h; path = include/RLMObjectBase_Private.h; sourceTree = "<group>"; };
 		2FBB699FE344B2FF47B73973FF0E72D3 /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
+		307D3741D07693376C3AE710CB09CABA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3124A33F0745A249189FC04B49B0DE37 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		31408CA5A76AB67C6C021893718AFA05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		321AF435BC8BF0207807DD1EC15A5EAB /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
@@ -398,8 +421,8 @@
 		385530681695CB2737544DAF90921DC3 /* librealmcore-ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "librealmcore-ios.a"; path = "core/librealmcore-ios.a"; sourceTree = "<group>"; };
 		38CA8C0DD238A65237401EF156FB4A5E /* RLMSyncPermissionValue.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncPermissionValue.mm; path = Realm/RLMSyncPermissionValue.mm; sourceTree = "<group>"; };
 		39D03DDD5EDD45C90706CBB2318FF0C8 /* RLMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMConstants.m; path = Realm/RLMConstants.m; sourceTree = "<group>"; };
+		3B1C76265B16173B880801545B32D2D7 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B29791BB128A85667CF8368B04E03F9 /* RLMSyncPermissionChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermissionChange.h; path = include/RLMSyncPermissionChange.h; sourceTree = "<group>"; };
-		3C1A75249ABB197FAFEE3330AA63D6CF /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D428EB864EFF6A4F2CE9953AE99E2D9 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		3EA631722CDE9EC7BD49CC38CD0EC52F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		40B2E57380C88FAC7C09A22F49141B33 /* RLMSyncUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUser.mm; path = Realm/RLMSyncUser.mm; sourceTree = "<group>"; };
@@ -411,23 +434,25 @@
 		48FDEB478796F48148155F3209CF2F31 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		4AF7B1BA5A3A6FF6C99A749AB7270791 /* Realm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Realm.h; path = include/Realm.h; sourceTree = "<group>"; };
 		4BBC09DD9F169B5D929D78925453F8AF /* RLMSyncUtil_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUtil_Private.h; path = include/RLMSyncUtil_Private.h; sourceTree = "<group>"; };
+		4CD0197F7495C0D019A6AD146B87C8AB /* Pods-Wallet Stone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallet Stone-umbrella.h"; sourceTree = "<group>"; };
+		4D155496889489B521312336DFB2E07B /* Pods-Wallet Stone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wallet Stone.modulemap"; sourceTree = "<group>"; };
 		4D4D6389DB218E2709B0D97E7F92BE99 /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
 		4DB54074830E3B3B8D2EEE5E7B2C3B63 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
 		4F4D5613ADF3C24310BA5D3D2740FF4A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		4F9ED94DF35C477007B8AD6A6292326F /* Pods-Wallet Stone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallet Stone-acknowledgements.plist"; sourceTree = "<group>"; };
 		514C09C38C66E02A51B88FA549996886 /* RLMJSONModels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMJSONModels.m; path = Realm/RLMJSONModels.m; sourceTree = "<group>"; };
 		51B5FE8E0A57BE0230C75DF30FABF6E3 /* transact_log_handler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = transact_log_handler.cpp; path = Realm/ObjectStore/src/impl/transact_log_handler.cpp; sourceTree = "<group>"; };
 		523478AFF23888D58412B01C87D34762 /* RLMOptionalBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMOptionalBase.mm; path = Realm/RLMOptionalBase.mm; sourceTree = "<group>"; };
 		55B7FC59AF8D0128AC51A019A44F2B6C /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		566E3D765B75147E624BEC80CAB7147B /* RLMObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase.h; path = include/RLMObjectBase.h; sourceTree = "<group>"; };
-		57EFC8E2711BB26AF93272606DF17337 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FF45185A4BD96E4070FDBA8DC43DCE /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
 		58BAC2F6AF78B3E882BA2809A1067EFA /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		596985AE0F76E5F0DB99D4F8D51F6A22 /* object_schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object_schema.cpp; path = Realm/ObjectStore/src/object_schema.cpp; sourceTree = "<group>"; };
 		5BB8B9D56CE9D842C2DBFEFB0135B732 /* RLMRealmConfiguration+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealmConfiguration+Sync.mm"; path = "Realm/RLMRealmConfiguration+Sync.mm"; sourceTree = "<group>"; };
-		5D0F9E4A112EE7C085E32534970D9FC0 /* Pods-Wallet Stone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallet Stone-umbrella.h"; sourceTree = "<group>"; };
 		5D3957E2CA5AF2D33C24B7CB4511359E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		5D6B733458BF65812E1593CA910377DB /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
 		5DFCED3F6EBAAA7EBD6C3EB297AD2FD7 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		5FB2AEB5BF6FF8F09EF5D0153026D777 /* Pods-Wallet Stone Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet Stone Tests-resources.sh"; sourceTree = "<group>"; };
 		5FE5AA0265A0F2BEC3ECEC3826904F87 /* RLMSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema_Private.h; path = include/RLMSchema_Private.h; sourceTree = "<group>"; };
 		624D5CA87EC6CE1ABD94AADD611D4D83 /* object.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object.cpp; path = Realm/ObjectStore/src/object.cpp; sourceTree = "<group>"; };
 		6468BDB6517EAA8DAEC79EEAB9EAA17B /* RLMSyncManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncManager.h; path = include/RLMSyncManager.h; sourceTree = "<group>"; };
@@ -442,23 +467,25 @@
 		7288BC1EEF91491BA1F3FAEF0938745F /* RLMResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults.h; path = include/RLMResults.h; sourceTree = "<group>"; };
 		72FD7FD82D47CBC5F4AB1D76B50FB882 /* shared_realm.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_realm.cpp; path = Realm/ObjectStore/src/shared_realm.cpp; sourceTree = "<group>"; };
 		735A9C91B0BA5AAAA067AB8E8FA785C2 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		74015D4A2A21B33D79E628466DA3F9DE /* Pods-Wallet Stone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet Stone.release.xcconfig"; sourceTree = "<group>"; };
 		743DD5151C1BDA524F42E76AF2995DAA /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
 		7478BC9C99A7089FABED786B01C004C8 /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
 		74A195BD5A2F0C7A726C6184F9736E7E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		751B50291BF5C59B0AF9A63C53518E48 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755A3C147BDD1C331F43360E84402F39 /* uuid.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = uuid.cpp; path = Realm/ObjectStore/src/util/uuid.cpp; sourceTree = "<group>"; };
+		75A8B7AB2C71AF0A08242E9A96557539 /* Pods-Wallet Stone Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallet Stone Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		767C265F368EB98FB4A22B7EE82833BD /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		76AFB7A5E827DACB72F8292FDCB43783 /* thread_safe_reference.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = thread_safe_reference.cpp; path = Realm/ObjectStore/src/thread_safe_reference.cpp; sourceTree = "<group>"; };
 		77A6608AFC1E9A2EE162C66683CD6F04 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		7920159C9897246006F4C777C8E2DBB8 /* index_set.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = index_set.cpp; path = Realm/ObjectStore/src/index_set.cpp; sourceTree = "<group>"; };
-		797030B46E26A238B27CC3358BE20672 /* Pods-Wallet Stone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Wallet Stone-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C8CC8D35A46CD68A9B7DEF0472D6A9A /* Pods-Wallet Stone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet Stone-frameworks.sh"; sourceTree = "<group>"; };
 		80C83280C95720148E8E9EFC48F24EE1 /* network_reachability_observer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = network_reachability_observer.cpp; path = Realm/ObjectStore/src/sync/impl/apple/network_reachability_observer.cpp; sourceTree = "<group>"; };
-		837F0F32426A5C4DEF85FBE198727B1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F635ABD7B311E9630E2A42FFC0D706 /* Pods-Wallet Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet Stone.debug.xcconfig"; sourceTree = "<group>"; };
 		83C084B2FA45092326204110163CC6EF /* RLMResults_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults_Private.h; path = include/RLMResults_Private.h; sourceTree = "<group>"; };
 		83F8E66E7D839B898A3A1DB60D2E8289 /* RLMSyncSession.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSession.mm; path = Realm/RLMSyncSession.mm; sourceTree = "<group>"; };
 		8509D3DCC8993D4009153EC36F1957EC /* RLMArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray.h; path = include/RLMArray.h; sourceTree = "<group>"; };
 		8523C89F5AFB579AAF0F6EAEB9129BA8 /* sync_metadata.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_metadata.cpp; path = Realm/ObjectStore/src/sync/impl/sync_metadata.cpp; sourceTree = "<group>"; };
 		85309389F41DA3EE6B42998827EA6DB7 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		8686AFAD0A947AFF9BA21E00C78BED5B /* Pods-Wallet Stone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet Stone-frameworks.sh"; sourceTree = "<group>"; };
 		86BC0A495BF3629AA873BC8570F5F152 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		874E4BA8F60A8EB373D36CD0072A22C2 /* RLMListBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMListBase.h; path = include/RLMListBase.h; sourceTree = "<group>"; };
 		87B371C3791C0D04114CA93557F4AEC0 /* RLMClassInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMClassInfo.mm; path = Realm/RLMClassInfo.mm; sourceTree = "<group>"; };
@@ -471,9 +498,12 @@
 		8CCDE0DC008B3E49D8FD59D53F293FE4 /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
 		8DBE85D6C27E657A86E5DD5C0F49A4D5 /* RLMSyncCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncCredentials.h; path = include/RLMSyncCredentials.h; sourceTree = "<group>"; };
 		8E4FA7BA6276220568EC64A32B0D2A52 /* RLMListBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMListBase.mm; path = Realm/RLMListBase.mm; sourceTree = "<group>"; };
+		8EBAA15B15C872E04EF7596A5D62FED0 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFBCFA1F72DE5DF9AAB09F1AB811378 /* RLMSyncCredentials.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSyncCredentials.m; path = Realm/RLMSyncCredentials.m; sourceTree = "<group>"; };
 		9048DFB9FF5320643C80FCC34E1A1E6F /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		90A9A169073A1B83E71E524DA169AB15 /* Pods-Wallet Stone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet Stone-resources.sh"; sourceTree = "<group>"; };
 		90DBEA2438A577AB0A9A4FFDD301C5C1 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
+		92C276DDFB5D8BC0FCE3CF14574F2C40 /* Pods-Wallet Stone Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet Stone Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9719CB82355A7A26DA55F44D05C9032C /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
 		9749C5BA2CA8E13140F572832FAFE9CD /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
@@ -488,11 +518,12 @@
 		A14F313F0BE690D33FEA97CF90F4B009 /* Realm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Realm-prefix.pch"; sourceTree = "<group>"; };
 		A1C7BFC37388FFC778744872355EFD16 /* RLMRealmConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration_Private.h; path = include/RLMRealmConfiguration_Private.h; sourceTree = "<group>"; };
 		A30C07BD5E9BEE80430717F09A5EAD5E /* RLMCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection.h; path = include/RLMCollection.h; sourceTree = "<group>"; };
-		A3D14BF290B0D2274FC854F1EB1455C5 /* Pods-Wallet Stone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet Stone.release.xcconfig"; sourceTree = "<group>"; };
-		A40BCE88663FDC3BCFAC7638E79F3335 /* Pods-Wallet Stone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet Stone-resources.sh"; sourceTree = "<group>"; };
 		A77FF86075EF00258E614CA4A6113599 /* object_store.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object_store.cpp; path = Realm/ObjectStore/src/object_store.cpp; sourceTree = "<group>"; };
-		A83154047FEF9C653BDD487946FF56B0 /* Pods-Wallet Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet Stone.debug.xcconfig"; sourceTree = "<group>"; };
+		A7E9CC4AE74C5F61482E34F82AD92C2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FDEE24DD539E8A2E824B750F8D884B /* Pods_Wallet_Stone_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Wallet_Stone_Tests.framework; path = "Pods-Wallet Stone Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87C32B6244AB72BB790D672C5D94D16 /* Pods-Wallet Stone Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wallet Stone Tests.modulemap"; sourceTree = "<group>"; };
 		A976E1F5E8913C2708D0D0B5D556FF69 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		AC723FB77AD44B8739C415DB7C4F6DDF /* Pods-Wallet Stone Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Wallet Stone Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AD06EFB8CEF080A2C49722008DBA3FC0 /* results_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = results_notifier.cpp; path = Realm/ObjectStore/src/impl/results_notifier.cpp; sourceTree = "<group>"; };
 		AEDF51FBD7F50531096DEA985DDE9CC7 /* placeholder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = placeholder.cpp; path = Realm/ObjectStore/src/placeholder.cpp; sourceTree = "<group>"; };
 		B216AA0A4B786B4C332B943494923A56 /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
@@ -507,8 +538,7 @@
 		BCAB88D31A8B4D86F8A492B948029601 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		BF1FB33F5F15FD68AE9B9A47BA70B9EA /* RLMSyncPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSyncPermission.m; path = Realm/RLMSyncPermission.m; sourceTree = "<group>"; };
 		C139CAEBC4A0900751401034617CFC57 /* schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = schema.cpp; path = Realm/ObjectStore/src/schema.cpp; sourceTree = "<group>"; };
-		C260A622505A172F05777708E96B7719 /* Pods-Wallet Stone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Wallet Stone-dummy.m"; sourceTree = "<group>"; };
-		C2CDD55338F600727AED239923240441 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C597EBA9534BEA30EB98437421CDBD06 /* Pods-Wallet Stone Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Wallet Stone Tests-umbrella.h"; sourceTree = "<group>"; };
 		C59C8F9821E0D24A2B932A22B1113F4E /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		C5FA4114B07E79E1D8BD4D4706FF0A49 /* RLMSyncSessionRefreshHandle.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSessionRefreshHandle.mm; path = Realm/RLMSyncSessionRefreshHandle.mm; sourceTree = "<group>"; };
 		C6F2A0F128C225AA7ABFBC0328DFF21F /* NSError+RLMSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RLMSync.m"; path = "Realm/NSError+RLMSync.m"; sourceTree = "<group>"; };
@@ -532,7 +562,6 @@
 		DCA0BBAD040F822DE420C6F85147727B /* sync_manager.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_manager.cpp; path = Realm/ObjectStore/src/sync/sync_manager.cpp; sourceTree = "<group>"; };
 		DDD791E3684986772C6A56D8023C3EAC /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
 		DE9348BB6B194654DCB7D2C05CF8BE7D /* format.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = format.cpp; path = Realm/ObjectStore/src/util/format.cpp; sourceTree = "<group>"; };
-		E00E8CBBBB767E82FF3C3DC4AB94B9F2 /* Pods_Wallet_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Wallet_Stone.framework; path = "Pods-Wallet Stone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DAFF1EF808B139B6AE6ADE3F530A07 /* NSError+RLMSync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+RLMSync.h"; path = "include/NSError+RLMSync.h"; sourceTree = "<group>"; };
 		E2B042014956C26128DB9F7C6DCCFBC3 /* RLMPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMPlatform.h; path = include/RLMPlatform.h; sourceTree = "<group>"; };
 		E49D409635A3C54A4DFF5A915EDC8456 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
@@ -541,14 +570,13 @@
 		E5D09590A762F9F29165F19D66194AFA /* RLMSyncPermissionOffer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermissionOffer_Private.h; path = include/RLMSyncPermissionOffer_Private.h; sourceTree = "<group>"; };
 		E766D7D25A3437E80398554D212A12C4 /* list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = list_notifier.cpp; path = Realm/ObjectStore/src/impl/list_notifier.cpp; sourceTree = "<group>"; };
 		EB9102F4CCEE022DD92501649490730F /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
-		EC0335463AE7EB5BE11CE980C9C4FE29 /* Pods-Wallet Stone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Wallet Stone.modulemap"; sourceTree = "<group>"; };
 		EC70AD9CF25147231CC4553C279A2A76 /* RLMRealm_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Private.h; path = include/RLMRealm_Private.h; sourceTree = "<group>"; };
 		EDB491ECF28738A026565E957F9C781C /* object_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object_notifier.cpp; path = Realm/ObjectStore/src/impl/object_notifier.cpp; sourceTree = "<group>"; };
+		EDD72AB98824E7E02CE9AC3A8EFF18CF /* Pods-Wallet Stone Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Wallet Stone Tests-frameworks.sh"; sourceTree = "<group>"; };
 		EE02529F0872D6AD23501B4DBF138C8D /* collection_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = collection_notifier.cpp; path = Realm/ObjectStore/src/impl/collection_notifier.cpp; sourceTree = "<group>"; };
 		EE17B471D7BAE838B288B6E762FBF948 /* sync_user.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_user.cpp; path = Realm/ObjectStore/src/sync/sync_user.cpp; sourceTree = "<group>"; };
 		F1FC394D45949366165BDEBD51A3A1BD /* RLMNetworkClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMNetworkClient.mm; path = Realm/RLMNetworkClient.mm; sourceTree = "<group>"; };
 		F5F222E78F145B26F97466C9E1B4E370 /* RLMSyncSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSession.h; path = include/RLMSyncSession.h; sourceTree = "<group>"; };
-		F91A528422330E0DDAFCC524D7625B04 /* Pods-Wallet Stone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Wallet Stone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F98045F73A2501F4E182A9EC83ABBD5B /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		FCF7CDC7910E650AB5C8A91FBBA8195B /* RLMSyncUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUtil.h; path = include/RLMSyncUtil.h; sourceTree = "<group>"; };
 		FF0BE9FA424892224110C230CA439747 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
@@ -556,6 +584,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3FB2428B34C1D1D5D072D2C7C68FBE5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25180975D17BEAAAAF8C2C5F80ADC8D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BFD515E9E2BB3ACC95013F133C38D13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,14 +633,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01DA15E49AD81280B31E193A965335A0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B33315D81FC1E383826785141299CB41 /* Pods-Wallet Stone */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		03B4136AAD1AFB096B7FD23707939052 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +668,24 @@
 				BCAB88D31A8B4D86F8A492B948029601 /* AFSecurityPolicy.m */,
 			);
 			name = Security;
+			sourceTree = "<group>";
+		};
+		4DB7C75AF39998004651D6D4ED37371D /* Pods-Wallet Stone */ = {
+			isa = PBXGroup;
+			children = (
+				307D3741D07693376C3AE710CB09CABA /* Info.plist */,
+				4D155496889489B521312336DFB2E07B /* Pods-Wallet Stone.modulemap */,
+				1F3DF6085CA32AFD33306B37DD9686DC /* Pods-Wallet Stone-acknowledgements.markdown */,
+				4F9ED94DF35C477007B8AD6A6292326F /* Pods-Wallet Stone-acknowledgements.plist */,
+				0C71364EF0C02BEEF2549977026AE245 /* Pods-Wallet Stone-dummy.m */,
+				8686AFAD0A947AFF9BA21E00C78BED5B /* Pods-Wallet Stone-frameworks.sh */,
+				90A9A169073A1B83E71E524DA169AB15 /* Pods-Wallet Stone-resources.sh */,
+				4CD0197F7495C0D019A6AD146B87C8AB /* Pods-Wallet Stone-umbrella.h */,
+				81F635ABD7B311E9630E2A42FFC0D706 /* Pods-Wallet Stone.debug.xcconfig */,
+				74015D4A2A21B33D79E628466DA3F9DE /* Pods-Wallet Stone.release.xcconfig */,
+			);
+			name = "Pods-Wallet Stone";
+			path = "Target Support Files/Pods-Wallet Stone";
 			sourceTree = "<group>";
 		};
 		4E38E3C21C57167298CF8FB15CFBF04B /* AFNetworking */ = {
@@ -699,6 +745,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		67F1B32B39BFE26C8B5DBDBF2AB09690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EBAA15B15C872E04EF7596A5D62FED0 /* AFNetworking.framework */,
+				751B50291BF5C59B0AF9A63C53518E48 /* MBProgressHUD.framework */,
+				09A297CCE7D931E174B084D67B866703 /* Pods_Wallet_Stone.framework */,
+				A7FDEE24DD539E8A2E824B750F8D884B /* Pods_Wallet_Stone_Tests.framework */,
+				3B1C76265B16173B880801545B32D2D7 /* Realm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6CF7F42A44051C33BE59F8C8EA93B099 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +769,24 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		74101FE326BFE8C3DAF5804D8DECF14D /* Pods-Wallet Stone Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A7E9CC4AE74C5F61482E34F82AD92C2F /* Info.plist */,
+				A87C32B6244AB72BB790D672C5D94D16 /* Pods-Wallet Stone Tests.modulemap */,
+				75A8B7AB2C71AF0A08242E9A96557539 /* Pods-Wallet Stone Tests-acknowledgements.markdown */,
+				1EF7629924DCF4DA986E8F626D1B720C /* Pods-Wallet Stone Tests-acknowledgements.plist */,
+				2E79E56CC01C8033DBAD1B5A27E86CD0 /* Pods-Wallet Stone Tests-dummy.m */,
+				EDD72AB98824E7E02CE9AC3A8EFF18CF /* Pods-Wallet Stone Tests-frameworks.sh */,
+				5FB2AEB5BF6FF8F09EF5D0153026D777 /* Pods-Wallet Stone Tests-resources.sh */,
+				C597EBA9534BEA30EB98437421CDBD06 /* Pods-Wallet Stone Tests-umbrella.h */,
+				92C276DDFB5D8BC0FCE3CF14574F2C40 /* Pods-Wallet Stone Tests.debug.xcconfig */,
+				AC723FB77AD44B8739C415DB7C4F6DDF /* Pods-Wallet Stone Tests.release.xcconfig */,
+			);
+			name = "Pods-Wallet Stone Tests";
+			path = "Target Support Files/Pods-Wallet Stone Tests";
 			sourceTree = "<group>";
 		};
 		780BD71D3D3047FC207E733CF030F9A9 /* Support Files */ = {
@@ -733,8 +809,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
 				6447765B8B00B06F8ED6155C1DCEF548 /* Pods */,
-				A5B42BA17C0375B9D53F56A3998A665D /* Products */,
-				01DA15E49AD81280B31E193A965335A0 /* Targets Support Files */,
+				67F1B32B39BFE26C8B5DBDBF2AB09690 /* Products */,
+				A3AE7BE4F32C396CD2762435018E74DE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -778,15 +854,13 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
-		A5B42BA17C0375B9D53F56A3998A665D /* Products */ = {
+		A3AE7BE4F32C396CD2762435018E74DE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C1A75249ABB197FAFEE3330AA63D6CF /* AFNetworking.framework */,
-				57EFC8E2711BB26AF93272606DF17337 /* MBProgressHUD.framework */,
-				E00E8CBBBB767E82FF3C3DC4AB94B9F2 /* Pods_Wallet_Stone.framework */,
-				C2CDD55338F600727AED239923240441 /* Realm.framework */,
+				4DB7C75AF39998004651D6D4ED37371D /* Pods-Wallet Stone */,
+				74101FE326BFE8C3DAF5804D8DECF14D /* Pods-Wallet Stone Tests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		B2144997DB4A92AA69BB6ED459C739C5 /* Serialization */ = {
@@ -798,24 +872,6 @@
 				07448F93523428681F63438ED1213F98 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
-			sourceTree = "<group>";
-		};
-		B33315D81FC1E383826785141299CB41 /* Pods-Wallet Stone */ = {
-			isa = PBXGroup;
-			children = (
-				837F0F32426A5C4DEF85FBE198727B1F /* Info.plist */,
-				EC0335463AE7EB5BE11CE980C9C4FE29 /* Pods-Wallet Stone.modulemap */,
-				F91A528422330E0DDAFCC524D7625B04 /* Pods-Wallet Stone-acknowledgements.markdown */,
-				797030B46E26A238B27CC3358BE20672 /* Pods-Wallet Stone-acknowledgements.plist */,
-				C260A622505A172F05777708E96B7719 /* Pods-Wallet Stone-dummy.m */,
-				7C8CC8D35A46CD68A9B7DEF0472D6A9A /* Pods-Wallet Stone-frameworks.sh */,
-				A40BCE88663FDC3BCFAC7638E79F3335 /* Pods-Wallet Stone-resources.sh */,
-				5D0F9E4A112EE7C085E32534970D9FC0 /* Pods-Wallet Stone-umbrella.h */,
-				A83154047FEF9C653BDD487946FF56B0 /* Pods-Wallet Stone.debug.xcconfig */,
-				A3D14BF290B0D2274FC854F1EB1455C5 /* Pods-Wallet Stone.release.xcconfig */,
-			);
-			name = "Pods-Wallet Stone";
-			path = "Target Support Files/Pods-Wallet Stone";
 			sourceTree = "<group>";
 		};
 		DC481C901F013B967D594FFAC1A57D4C /* Realm */ = {
@@ -1072,9 +1128,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB6B9510F7AF65A2EFA3DE91C27A4C37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC4D2F39673B3A45FA70F409280CBB8 /* Pods-Wallet Stone Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0963F420954879313A66E035B1F59E96 /* Pods-Wallet Stone Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27612F9C465FA28BE1C4E3F35DBB98F3 /* Build configuration list for PBXNativeTarget "Pods-Wallet Stone Tests" */;
+			buildPhases = (
+				BBEB8492621199E99C907A25BA616B9F /* Sources */,
+				3FB2428B34C1D1D5D072D2C7C68FBE5A /* Frameworks */,
+				EB6B9510F7AF65A2EFA3DE91C27A4C37 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A75A70336BA603E6FC863610B335B17A /* PBXTargetDependency */,
+				A07296EBD7F3C1D06A817A5CBBF8EAF4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Wallet Stone Tests";
+			productName = "Pods-Wallet Stone Tests";
+			productReference = A7FDEE24DD539E8A2E824B750F8D884B /* Pods_Wallet_Stone_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
@@ -1089,7 +1172,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 57EFC8E2711BB26AF93272606DF17337 /* MBProgressHUD.framework */;
+			productReference = 751B50291BF5C59B0AF9A63C53518E48 /* MBProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4D52D0EA95610AEC398BBD075BB3A61D /* Pods-Wallet Stone */ = {
@@ -1109,7 +1192,7 @@
 			);
 			name = "Pods-Wallet Stone";
 			productName = "Pods-Wallet Stone";
-			productReference = E00E8CBBBB767E82FF3C3DC4AB94B9F2 /* Pods_Wallet_Stone.framework */;
+			productReference = 09A297CCE7D931E174B084D67B866703 /* Pods_Wallet_Stone.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */ = {
@@ -1126,7 +1209,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 3C1A75249ABB197FAFEE3330AA63D6CF /* AFNetworking.framework */;
+			productReference = 8EBAA15B15C872E04EF7596A5D62FED0 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F6039AD3095FC504C3D5D2F352D08B15 /* Realm */ = {
@@ -1145,7 +1228,7 @@
 			);
 			name = Realm;
 			productName = Realm;
-			productReference = C2CDD55338F600727AED239923240441 /* Realm.framework */;
+			productReference = 3B1C76265B16173B880801545B32D2D7 /* Realm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1165,13 +1248,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A5B42BA17C0375B9D53F56A3998A665D /* Products */;
+			productRefGroup = 67F1B32B39BFE26C8B5DBDBF2AB09690 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */,
 				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
 				4D52D0EA95610AEC398BBD075BB3A61D /* Pods-Wallet Stone */,
+				0963F420954879313A66E035B1F59E96 /* Pods-Wallet Stone Tests */,
 				F6039AD3095FC504C3D5D2F352D08B15 /* Realm */,
 			);
 		};
@@ -1206,6 +1290,14 @@
 				34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */,
 				B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */,
 				7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBEB8492621199E99C907A25BA616B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D8D5DC8B4506CC461FDB0CCA14FB8A /* Pods-Wallet Stone Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1318,6 +1410,18 @@
 			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
 			targetProxy = 5883E43783E8D11809A763C1F5A56DF8 /* PBXContainerItemProxy */;
 		};
+		A07296EBD7F3C1D06A817A5CBBF8EAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Realm;
+			target = F6039AD3095FC504C3D5D2F352D08B15 /* Realm */;
+			targetProxy = EAD1CADA612F90EFA124BD5735CFC145 /* PBXContainerItemProxy */;
+		};
+		A75A70336BA603E6FC863610B335B17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Wallet Stone";
+			target = 4D52D0EA95610AEC398BBD075BB3A61D /* Pods-Wallet Stone */;
+			targetProxy = F0A8C12E3803EDC41A6004E3FC3DE1CC /* PBXContainerItemProxy */;
+		};
 		F37162B4955D5C43C6AE38E1A882C742 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
@@ -1329,7 +1433,7 @@
 /* Begin XCBuildConfiguration section */
 		07B9969382A47AC14A62F183088247AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A83154047FEF9C653BDD487946FF56B0 /* Pods-Wallet Stone.debug.xcconfig */;
+			baseConfigurationReference = 81F635ABD7B311E9630E2A42FFC0D706 /* Pods-Wallet Stone.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1484,9 +1588,43 @@
 			};
 			name = Release;
 		};
+		883417E88CC5A3E8E65A68E5767B0D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC723FB77AD44B8739C415DB7C4F6DDF /* Pods-Wallet Stone Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Wallet Stone Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Wallet Stone Tests/Pods-Wallet Stone Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		89F603AC187A1D36ED97CC9996CC98A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3D14BF290B0D2274FC854F1EB1455C5 /* Pods-Wallet Stone.release.xcconfig */;
+			baseConfigurationReference = 74015D4A2A21B33D79E628466DA3F9DE /* Pods-Wallet Stone.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1517,6 +1655,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		8FE91FB1DCC38576F48DDFCC61992B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C276DDFB5D8BC0FCE3CF14574F2C40 /* Pods-Wallet Stone Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Wallet Stone Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Wallet Stone Tests/Pods-Wallet Stone Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		D15623332D6CE7B430DE96474A996C1C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1701,6 +1872,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27612F9C465FA28BE1C4E3F35DBB98F3 /* Build configuration list for PBXNativeTarget "Pods-Wallet Stone Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE91FB1DCC38576F48DDFCC61992B1B /* Debug */,
+				883417E88CC5A3E8E65A68E5767B0D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

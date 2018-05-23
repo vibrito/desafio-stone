@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31DCDF50940F967A03D8F379 /* Pods_Wallet_Stone_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA933677971E5DB9016F70 /* Pods_Wallet_Stone_Tests.framework */; };
 		461AAA1EBB8EDC31B9BCEC6C /* Pods_Wallet_Stone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791472D94DCC1F0E8AF8069B /* Pods_Wallet_Stone.framework */; };
 		BD1253B4209BA12700050C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1253B3209BA12700050C4F /* Main.storyboard */; };
 		BD1253B7209BAB9B00050C4F /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1253B6209BAB9B00050C4F /* WalletViewController.m */; };
@@ -18,6 +19,9 @@
 		BD5E59612098253D00B8BF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5E595F2098253D00B8BF36 /* LaunchScreen.storyboard */; };
 		BD5E59642098253D00B8BF36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59632098253D00B8BF36 /* main.m */; };
 		BD5E596C209832F200B8BF36 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E596B209832F200B8BF36 /* RegisterViewController.m */; };
+		BD8D3F5920B4B9C90072DE28 /* UserServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8D3F5820B4B9C90072DE28 /* UserServiceTest.m */; };
+		BD8D3F5A20B4BEC30072DE28 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E596B209832F200B8BF36 /* RegisterViewController.m */; };
+		BD8D3F5B20B4BEC90072DE28 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003620A29B5C00C87080 /* UserService.m */; };
 		BD9C001F20A243E000C87080 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C001E20A243E000C87080 /* Coin.m */; };
 		BD9C002220A25C6F00C87080 /* BritaService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C002120A25C6F00C87080 /* BritaService.m */; };
 		BD9C002520A25C8200C87080 /* BitcoinService.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C002420A25C8200C87080 /* BitcoinService.m */; };
@@ -30,15 +34,30 @@
 		BD9C004020A30B1D00C87080 /* HistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C003F20A30B1D00C87080 /* HistoryItem.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BD4ABDC420B4B3D80058B695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD5E59492098253B00B8BF36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD5E59502098253B00B8BF36;
+			remoteInfo = "Wallet Stone";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		27D90D743944DDEEF92C7E6A /* Pods-Wallet Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet Stone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone.debug.xcconfig"; sourceTree = "<group>"; };
 		4684FE534E33B83C57CC4276 /* Pods-Wallet Stone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet Stone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone.release.xcconfig"; sourceTree = "<group>"; };
+		47CE5DC1F60A380B916607A3 /* Pods-Wallet Stone Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet Stone Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet Stone Tests/Pods-Wallet Stone Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		52AA933677971E5DB9016F70 /* Pods_Wallet_Stone_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet_Stone_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		791472D94DCC1F0E8AF8069B /* Pods_Wallet_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet_Stone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59B93365CC824C0EF15B6DB /* Pods-Wallet Stone Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet Stone Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet Stone Tests/Pods-Wallet Stone Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BD1253B3209BA12700050C4F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BD1253B5209BAB9B00050C4F /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		BD1253B6209BAB9B00050C4F /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		BD1253B8209BABDD00050C4F /* HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		BD1253B9209BABDD00050C4F /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		BD4ABDBF20B4B3D80058B695 /* Wallet Stone Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet Stone Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4ABDC320B4B3D80058B695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD5E59512098253C00B8BF36 /* Wallet Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallet Stone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5E59542098253C00B8BF36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD5E59552098253C00B8BF36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +70,7 @@
 		BD5E59632098253D00B8BF36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD5E596A209832F200B8BF36 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		BD5E596B209832F200B8BF36 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		BD8D3F5820B4B9C90072DE28 /* UserServiceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserServiceTest.m; sourceTree = "<group>"; };
 		BD9C001D20A243E000C87080 /* Coin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
 		BD9C001E20A243E000C87080 /* Coin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
 		BD9C002020A25C6F00C87080 /* BritaService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BritaService.h; sourceTree = "<group>"; };
@@ -73,6 +93,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BD4ABDBC20B4B3D80058B695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DCDF50940F967A03D8F379 /* Pods_Wallet_Stone_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD5E594E2098253B00B8BF36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,10 +113,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD4ABDC020B4B3D80058B695 /* Wallet Stone Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BD8D3F5820B4B9C90072DE28 /* UserServiceTest.m */,
+				BD4ABDC320B4B3D80058B695 /* Info.plist */,
+			);
+			path = "Wallet Stone Tests";
+			sourceTree = "<group>";
+		};
 		BD5E59482098253B00B8BF36 = {
 			isa = PBXGroup;
 			children = (
 				BD5E59532098253C00B8BF36 /* Wallet Stone */,
+				BD4ABDC020B4B3D80058B695 /* Wallet Stone Tests */,
 				BD5E59522098253C00B8BF36 /* Products */,
 				C25460474C03623152DC9D90 /* Pods */,
 				EF8E4B09E63E994ECB6B2C0F /* Frameworks */,
@@ -99,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				BD5E59512098253C00B8BF36 /* Wallet Stone.app */,
+				BD4ABDBF20B4B3D80058B695 /* Wallet Stone Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +212,8 @@
 			children = (
 				27D90D743944DDEEF92C7E6A /* Pods-Wallet Stone.debug.xcconfig */,
 				4684FE534E33B83C57CC4276 /* Pods-Wallet Stone.release.xcconfig */,
+				47CE5DC1F60A380B916607A3 /* Pods-Wallet Stone Tests.debug.xcconfig */,
+				B59B93365CC824C0EF15B6DB /* Pods-Wallet Stone Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,6 +223,7 @@
 			children = (
 				BD9C002D20A275A200C87080 /* SystemConfiguration.framework */,
 				791472D94DCC1F0E8AF8069B /* Pods_Wallet_Stone.framework */,
+				52AA933677971E5DB9016F70 /* Pods_Wallet_Stone_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +231,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BD4ABDBE20B4B3D80058B695 /* Wallet Stone Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD4ABDC620B4B3D80058B695 /* Build configuration list for PBXNativeTarget "Wallet Stone Tests" */;
+			buildPhases = (
+				2D845ADCF91F2921A3A36ACB /* [CP] Check Pods Manifest.lock */,
+				BD4ABDBB20B4B3D80058B695 /* Sources */,
+				BD4ABDBC20B4B3D80058B695 /* Frameworks */,
+				BD4ABDBD20B4B3D80058B695 /* Resources */,
+				D09AB088531ACD3F9B299090 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD4ABDC520B4B3D80058B695 /* PBXTargetDependency */,
+			);
+			name = "Wallet Stone Tests";
+			productName = "Wallet Stone Tests";
+			productReference = BD4ABDBF20B4B3D80058B695 /* Wallet Stone Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BD5E59502098253B00B8BF36 /* Wallet Stone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD5E59672098253E00B8BF36 /* Build configuration list for PBXNativeTarget "Wallet Stone" */;
@@ -217,6 +279,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Vinicius Brito";
 				TargetAttributes = {
+					BD4ABDBE20B4B3D80058B695 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = BD5E59502098253B00B8BF36;
+					};
 					BD5E59502098253B00B8BF36 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -236,11 +302,19 @@
 			projectRoot = "";
 			targets = (
 				BD5E59502098253B00B8BF36 /* Wallet Stone */,
+				BD4ABDBE20B4B3D80058B695 /* Wallet Stone Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BD4ABDBD20B4B3D80058B695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD5E594F2098253B00B8BF36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +329,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D845ADCF91F2921A3A36ACB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wallet Stone Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		96D9FFFFA2EC5C383B48EFFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +367,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallet Stone/Pods-Wallet Stone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09AB088531ACD3F9B299090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wallet Stone Tests/Pods-Wallet Stone Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallet Stone Tests/Pods-Wallet Stone Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8AFFD5DFFEC66DF11B994C2 /* [CP] Check Pods Manifest.lock */ = {
@@ -298,6 +408,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BD4ABDBB20B4B3D80058B695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8D3F5920B4B9C90072DE28 /* UserServiceTest.m in Sources */,
+				BD8D3F5B20B4BEC90072DE28 /* UserService.m in Sources */,
+				BD8D3F5A20B4BEC30072DE28 /* RegisterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD5E594D2098253B00B8BF36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +442,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BD4ABDC520B4B3D80058B695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD5E59502098253B00B8BF36 /* Wallet Stone */;
+			targetProxy = BD4ABDC420B4B3D80058B695 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		BD5E595A2098253C00B8BF36 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -342,6 +470,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BD4ABDC720B4B3D80058B695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CE5DC1F60A380B916607A3 /* Pods-Wallet Stone Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4L6C6JGYH;
+				INFOPLIST_FILE = "Wallet Stone Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vibrito.Wallet-Stone-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallet Stone.app/Wallet Stone";
+			};
+			name = Debug;
+		};
+		BD4ABDC820B4B3D80058B695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59B93365CC824C0EF15B6DB /* Pods-Wallet Stone Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4L6C6JGYH;
+				INFOPLIST_FILE = "Wallet Stone Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vibrito.Wallet-Stone-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallet Stone.app/Wallet Stone";
+			};
+			name = Release;
+		};
 		BD5E59652098253E00B8BF36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -462,10 +622,7 @@
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
 				INFOPLIST_FILE = "Wallet Stone/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vibrito.Wallet-Stone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -483,10 +640,7 @@
 				DEVELOPMENT_TEAM = R4L6C6JGYH;
 				INFOPLIST_FILE = "Wallet Stone/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vibrito.Wallet-Stone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -497,6 +651,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BD4ABDC620B4B3D80058B695 /* Build configuration list for PBXNativeTarget "Wallet Stone Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD4ABDC720B4B3D80058B695 /* Debug */,
+				BD4ABDC820B4B3D80058B695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD5E594C2098253B00B8BF36 /* Build configuration list for PBXProject "Wallet Stone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
