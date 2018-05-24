@@ -11,5 +11,12 @@ platform :ios do
   lane :test do
     xctest(scheme: "Wallet Stone", destination: "platform=iOS Simulator,name=iPhone 8,OS=11.3", skip_build: true)
   end
+  
+  desc “Roda os testes e envia para o Test_Flight”
+  lane :test do
+    xctest(scheme: "Wallet Stone", destination: "platform=iOS Simulator,name=iPhone 8,OS=11.3", skip_build: true)
+    build_app(scheme: "Wallet Stone")
+    upload_to_testflight
+  end
 
 end
