@@ -48,7 +48,7 @@ Foram implementadas duas funcionalidades automatizadas, rodar os testes e subir 
 
 ### Automatizando os testes
 
-Para rodar somente os testes, abra o Simulator com o iPhone 8, iOS 11.3. Após abra o terminal e navegue até a pasta que contem o projeto. Dentro dessa pasta digite o seguinte comando: 
+Para rodar somente os testes, abra o Simulator com o iPhone 8, iOS 11.3. Após, abra o terminal e navegue até a pasta que contem o projeto. Dentro dessa pasta digite o seguinte comando: 
 
 ```
 fastlane test
@@ -66,7 +66,7 @@ Na primeira vez que o comando for iniciado, será pedido seu Apple ID com autori
 
 ### Automatizando os teste e logo após subir a aplicação para o TestFlight
 
-Abra o Simulator com o iPhone 8, iOS 11.3. Após abra o terminal e navegue até a pasta que contem o projeto. Dentro dessa pasta digite o seguinte comando: 
+Abra o Simulator com o iPhone 8, iOS 11.3. Após, abra o terminal e navegue até a pasta que contem o projeto. Dentro dessa pasta digite o seguinte comando: 
 
 ```
 fastlane betaTest
