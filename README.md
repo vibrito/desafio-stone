@@ -42,10 +42,10 @@ Atualmente somente o processo de login com sucesso e com erro e registro com suc
 ![Mou icon](https://fastlane.tools/assets/img/logo-desktop-large.png)
 
 Abra o terminal e coloque os seguintes comandos:
-Para instalar o terminal no xcode
 ```
 xcode-select --install
 ```
+Isso instalaráo terminal do XCode, caso ainda não tenha sido instalado.
 
 Para instalar fastlane
 ```
